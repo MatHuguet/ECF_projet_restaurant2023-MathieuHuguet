@@ -1,0 +1,27 @@
+.mainpage-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.mainpage-img > img{
+  margin: 1rem;
+
+}
+
+button {
+  border: none;
+  font-size: 14px;
+  width: 6rem;
+  height: 2rem;
+  border-radius: 25px;
+  color: white;
+  background-color: var(--cl-dark-brown);
+}
+
+h1 {
+  text-align: center;
+  margin: 1rem;
+}
