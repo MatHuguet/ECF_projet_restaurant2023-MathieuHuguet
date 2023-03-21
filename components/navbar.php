@@ -10,7 +10,7 @@ echo'
                 <a href="reservation.php" class="nav-link">Réserver</a>
             </li>
             <li class="nav-item menu-item">
-                <a href="#" class="nav-link">Voir la carte</a>
+                <a href="menu_page.php" class="nav-link">Voir la carte</a>
             </li>
             <li class="nav-item">
                 <a href="#" class="nav-link">Contact</a>

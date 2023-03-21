@@ -1,0 +1,21 @@
+.menu-category {
+  display: flex;
+  justify-content: space-around;
+}
+
+.menu-category > h2 {
+  text-align: center;
+}
+
+.top-menu-page > h2 {
+  text-align: center;
+}
+
+.title_price {
+  display: flex;
+}
+.title_price p {
+  padding: 1rem;
+}
+
+/*# sourceMappingURL=menu_style.css.map */
