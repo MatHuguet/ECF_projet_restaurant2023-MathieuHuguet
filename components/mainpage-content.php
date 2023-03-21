@@ -22,7 +22,7 @@
             <img src="./img/chief42891522.jpg">
         </div>
         <div class="text">
-            <p>Lorem ipsum dolor sit amet</p>
+            <p>Arnaud Michant</p>
         </div>
 
     </div>

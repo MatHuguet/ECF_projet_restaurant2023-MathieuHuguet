@@ -84,4 +84,8 @@ ul > li {
   font-size: 12px;
 }
 
+button[type=radio] {
+  background-color: red;
+}
+
 /*# sourceMappingURL=style.css.map */

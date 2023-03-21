@@ -20,7 +20,7 @@
     <?php require_once './components/navbar.php';?>
 </nav>
 <div class"top-book-page">
-    <h2>RESERVER UNE TABLE</h2>
+    <h2>RESERVER UNE<br>TABLE</h2>
 </div>
 <div class="reservation-container">
     <p>texte</p>
@@ -33,17 +33,21 @@
         <input type="date" class="date-input" placeholder="Date :" name="resa_date" id='date' required />
         <p>Horaire de réservation souhaité :</p>
         <div class="time-container">
-            <label for="resa_lunchtime" class="form_label">Déjeuner :
-            <input type="button" class="time-input" name="resa_lunchtime" id='resa_lunchtime' required value="12h30"/>
-            <input type="button" class="time-input" name="resa_lunchtime" id='resa_lunchtime' required value="13h00"/>
-                <input type="button" class="time-input" name="resa_lunchtime" id='resa_lunchtime' required value="13h30"/>
+            <label for="time-select" class="form-time"> Horaire souhaité :
+                <select>
+                    <option disabled>Déjeuner :</option>
+                    <option value="12:15">12h15</option>
+                    <option value="12:30">12h30</option>
+                    <option value="12:45">12h45</option>
+                    <option value="13:00">13h00</option>
+                    <option disabled>Diner :</option>
+                    <option value="19:15">19h15</option>
+                    <option value="19:30">19h30</option>
+                    <option value="19:45">19h45</option>
+                    <option value="20:00">20h00</option>
+                </select>
             </label>
-            <label for="resa_dinertime" class="form_label">Diner :
-                <input type="button" class="time-input" name="resa_dinertime" id='resa_dinertime' required value="19h15"/>
-                <input type="button" class="time-input" name="resa_dinertime" id='resa_dinertime' required value="19h45"/>
-                <input type="button" class="time-input" name="resa_dinertime" id='resa_dinertime' required value="20h15"/>
-            </label>
-            <label for="customer-number" class="form-number"> Nombre de couvert :
+            <label for="infos" class="form-number"> Nombre de couvert :
                 <select>
                     <option value="1">1</option>
                     <option value="2">2</option>
@@ -55,7 +59,7 @@
                     <option value="8">8</option>
                 </select>
             </label>
-            <p class="resa-nbr-restriction">
+            <p class="infos">
                 Au delà de 8 couverts, merci de contacter directetment le restaurant.
             </p>
         </div>
@@ -64,8 +68,21 @@
         <textarea id="custom-comment" name="custom-comment"
                   rows="5" cols="20" form="resa-form" placeholder="Commentez ici">
 </textarea>
+        <label for="email" class="form_label"></label>
+        <input type="email" class="text-input" placeholder="Email :" name="email" id='email' value="" required />
+        <label for="password" class="form_label"></label>
+        <input type="password" class="text-input" placeholder="Mot de passe*" name="password" id='password' value=""/>
+        <p class="infos">*Seulement si vous possédez un compte. Si vous souhaitez en créer un afin de recevoir nos newletters et
+            ouvrir un compte fidélité, cliquez sur “Créer un compte et réserver”.</p>
     </form>
+    <div class="validation-reas-form">
+        <a href="reservation.php"><button type="button" >+ Réserver</button></a>
+        <a href="reservation.php"><button type="button" >+ Créer un compte et réserver</button></a>
+
+    </div>
 </div>
+
+
 <footer>
     <?php require_once './components/footer.php';?>
 </footer>
