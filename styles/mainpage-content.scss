@@ -25,3 +25,33 @@ h1 {
   text-align: center;
   margin: 1rem;
 }
+
+.content-line {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.content-image > img{
+  width: 8rem;
+  margin: 1rem;
+}
+
+.text {
+  margin: 1rem;
+
+}
+
+.chief-introd {
+  color: white;
+  background-color: var(--cl-dark-brown);
+  height: 12rem;
+}
+
+.button-line {
+  margin: 1rem 0;
+}
+
+.blason > img {
+  margin: 0 2rem;
+}
